@@ -1,0 +1,28 @@
+package model;
+
+public class Driver {
+	
+public static void main(String[] args) {
+		
+		SuperDepartment obj1 =  new AdminDepartment();
+		System.out.println("Welcome to Admin Department");
+		System.out.println(obj1.getTodaysWork());
+		System.out.println(obj1.getWorkDeadline());
+	    System.out.println(obj1.isTodayAHoliday());
+		
+		SuperDepartment obj2 =  new HrDepartment();
+		System.out.println("Welcome to HR Department");
+		System.out.println(((HrDepartment) obj2).doActivity());
+		System.out.println(obj2.getTodaysWork());
+		System.out.println(obj2.getWorkDeadline()); 
+		System.out.println(obj1.isTodayAHoliday());
+	
+		SuperDepartment obj3 =new TechDepartment();
+		System.out.println("Welcome to Tech Department");
+		System.out.println(obj3.getTodaysWork());
+		System.out.println(obj3.getWorkDeadline());
+		System.out.println( ((TechDepartment) obj3).getTechStackInformation());
+	    System.out.println(obj1.isTodayAHoliday());
+	}
+
+}
