@@ -8,7 +8,7 @@ public static void main(String[] args) {
 		System.out.println("Welcome to Admin Department");
 		System.out.println(obj1.getTodaysWork());
 		System.out.println(obj1.getWorkDeadline());
-	    System.out.println(obj1.isTodayAHoliday());
+	        System.out.println(obj1.isTodayAHoliday());
 		
 		SuperDepartment obj2 =  new HrDepartment();
 		System.out.println("Welcome to HR Department");
@@ -22,7 +22,7 @@ public static void main(String[] args) {
 		System.out.println(obj3.getTodaysWork());
 		System.out.println(obj3.getWorkDeadline());
 		System.out.println( ((TechDepartment) obj3).getTechStackInformation());
-	    System.out.println(obj1.isTodayAHoliday());
+	        System.out.println(obj1.isTodayAHoliday());
 	}
 
 }
